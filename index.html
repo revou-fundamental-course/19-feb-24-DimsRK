@@ -3,27 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>My Company</title>
 </head>
 <body>
     <header>
         <div id="logo"><img src="" alt="Company Logo"></div>
         <nav>
-            <ul>
-                <li><a href=""></a>Our Profile</li>
-                <li><a href=""></a>About Us</li>
-                <li><a href=""></a>Message Us</li>
+            <ul id="navigation">
+                <li><a href="#company-branch" class="navBar">Our Location</a></li>
+                <li><a href="#about-us" class="navBar">About Us</a></li>
+                <li><a href="#message-us" class="navBar">Message Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="greeting"><p></p></div>
+        <h2 id="greeting">Hi!</h2>
+        <p id="welcome">Selamat datang di website resmi Perusahaan kami</p>
         <div id="about-us">
-            <img src="" alt="" class="mainImage">
-            <button onclick=""></button>
-            <button onclick=""></button>
+            <button onclick="prevImage()" id="go-left">kiri</button>
+            <img src="Assets/Gedung Sate.jpg" alt="Company Info" id="main-img">
+            <button onclick="nextImage()" id="go-right">kanan</button>     
+        </div>
+        <hr>
+        <div id="company-branch">
+            <div>
+                <div class="companyLocation" style="background-image: url(Assets/Gedung\ Sate.jpg);"></div>
+                <h4 class="location">Bekasi</h4>
+            </div>
+            <div>
+                <div class="companyLocation" style="background-image: url(Assets/Piramida\ Summarecon.jpg);"></div>
+                <h4 class="location">Bandung</h4>
+            </div>
+            <div>
+                <div class="companyLocation" style="background-image: url(Assets/Patung\ Suroboyo.jpg);"></div>
+                <h4 class="location">Surabaya</h4>
+            </div>
+        </div>
+        <hr>
+        <div id="message-us">
+            <form>
+                <label for="">Nama / Name</label>
+                <input type="text">
+                <label for="">Umur / Age</label>
+                <input type="number">
+                <label for="">E-mail</label>
+                <input type="email">
+                <div>
+                    <label for="">Jenis Kelamin / Gender</label>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Laki-laki / Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Perempuan / Female</label>
+                </div>
+            </form>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5E1675" fill-opacity="1" d="M0,128L48,117.3C96,107,192,85,288,85.3C384,85,480,107,576,128C672,149,768,171,864,176C960,181,1056,171,1152,160C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        </div>
+    </footer>
+    <script src="JS/script.js"></script>
 </body>
 </html>
