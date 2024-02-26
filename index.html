@@ -9,11 +9,11 @@
 </head>
 <body>
     <header>
-        <div id="logo"><img src="Assets/Eternal Guard Name, Quote, Logo WHITE.png" width="200px" height="200px" alt="Company Logo"></div>
+        <div id="logo"><img src="Assets/Eternal Guard Name, Quote, Logo WHITE.png" width="150px" alt="Company Logo"></div>
         <h1>ETERNAL GUARD</h1>
         <nav>
             <ul id="navigation">
-                <li><a href="#company-branch" class="navBar">Our Location</a></li>
+                <li><a href="#company-location" class="navBar">Our Location</a></li>
                 <li><a href="#about-us" class="navBar">About Us</a></li>
                 <li><a href="#message-us" class="navBar">Message Us</a></li>
             </ul>
@@ -21,45 +21,67 @@
     </header>
     <main>
         <h2 id="greeting">Hi!</h2>
-        <p id="welcome">Selamat datang di website resmi Perusahaan kami</p>
+        <h3 id="welcome">Selamat datang di website resmi</h3><h3 id="name">ETERNAL GUARD</h3>
         <div id="about-us">
-            <button onclick="prevImage()" id="go-left">kiri</button>
+            <button onclick="prevImage()" id="go-left" class="arrow"><img src="Assets/arrow left.png" alt="Left Arrow" width="50px" height="50px"></button>
             <img src="Assets/image 1.png" width="500px" height="300px" alt="Company Info" id="main-img">
-            <button onclick="nextImage()" id="go-right">kanan</button>     
+            <button onclick="nextImage()" id="go-right" class="arrow"><img src="Assets/arrow right.png" alt="Right Arrow" width="50px" height="50px"></button>     
         </div>
         <hr>
-        <div id="company-branch">
-            <div>
-                <div class="companyLocation" style="background-image: url(Assets/Gedung\ Sate.jpg);"></div>
-                <h4 class="location">Bekasi</h4>
-            </div>
-            <div>
-                <div class="companyLocation" style="background-image: url(Assets/Piramida\ Summarecon.jpg);"></div>
-                <h4 class="location">Bandung</h4>
-            </div>
-            <div>
-                <div class="companyLocation" style="background-image: url(Assets/Patung\ Suroboyo.jpg);"></div>
-                <h4 class="location">Surabaya</h4>
+        <div id="company-location">
+            <h4>Eternal Guard dapat melayani anda dengan online melalui aplikasi ataupun offline dengan cara mendatangi kantor cabang kami yang telah tersebar di 7 Kota Besar di Indonesia</h4>
+            <div id="company-branch1">
+                <div>
+                    <div class="companyLocation" style="background-image: url(Assets/Monas.jpg);"></div>
+                    <h4 class="location">Jakarta</h4>
+                </div>
+                <div>
+                    <div class="companyLocation" style="background-image: url(Assets/Gedung\ Sate.jpg);"></div>
+                    <h4 class="location">Bandung</h4>
+                </div>
+                <div>
+                    <div class="companyLocation" style="background-image: url(Assets/Tugu\ Jogja.jpg);"></div>
+                    <h4 class="location">Yogyakarta</h4>
+                </div>
+                <div>
+                    <div class="companyLocation" style="background-image: url(Assets/Patung\ Suroboyo.jpg);"></div>
+                    <h4 class="location">Surabaya</h4>
+                </div>  
+            </div>  
+            <div id="company-branch2">
+                <div>
+                    <div class="companyLocation" style="background-image: url(Assets/Pura\ Ulun\ Danu\ Bratan.jpg);"></div>
+                    <h4 class="location">Bali</h4>
+                </div>
+                <div>
+                    <div class="companyLocation" style="background-image: url(Assets/Jembatan\ Ampera.jpg);"></div>
+                    <h4 class="location">Palembang</h4>
+                </div>
+                <div>
+                    <div class="companyLocation" style="background-image: url(Assets/Tugu\ Khatulistiwa.jpg);"></div>
+                    <h4 class="location">Pontianak</h4>
+                </div>
             </div>
         </div>
         <hr>
         <div id="message-us">
             <form>
-                <label for="">Nama / Name</label>
-                <input type="text">
-                <label for="">Umur / Age</label>
-                <input type="number">
-                <label for="">E-mail</label>
-                <input type="email">
-                <div>
-                    <label for="">Jenis Kelamin / Gender</label>
+                <label for="username"><p>Nama :</p></label>
+                <input type="text" id="username">
+                <label for="age"><p>Umur :</p></label>
+                <input type="number" id="age">
+                <label for="email"><p>E-mail :</p></label>
+                <input type="email" id="email">
+                <div id="gender">
+                    <p>Jenis Kelamin :</p>
                     <input type="radio" name="gender" id="male">
-                    <label for="male">Laki-laki / Male</label>
+                    <label for="male">Laki-laki</label>
                     <input type="radio" name="gender" id="female">
-                    <label for="female">Perempuan / Female</label>
-                </div>
+                    <label for="female">Perempuan</label>
+                </div>              
             </form>
         </div>
+        <button id="submit">submit</button>
     </main>
     <footer>
         <div>

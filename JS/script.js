@@ -1,20 +1,3 @@
-/*var currentImageIndex = 0;
-var images = ["Assets/Piramida\ Summarecon.jpg", "Assets/Gedung\ Sate.jpg", "Assets/Patung\ Suroboyo.jpg"];
-
-function prevImage() {
-    if (currentImageIndex > 0) {
-        currentImageIndex--;
-        document.getElementById("main-img").src = images[currentImageIndex];
-    }
-}
-
-function nextImage() {
-    if (currentImageIndex < images.length - 1) {
-        currentImageIndex++;
-        document.getElementById("main-img").src = images[currentImageIndex];
-    }
-} */
-
 var currentImageIndex = 0;
 var images = ["Assets/image 1.png", "Assets/image 2.png", "Assets/image 3.png", "Assets/image 4.png"];
 

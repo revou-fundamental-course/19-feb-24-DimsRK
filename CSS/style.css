@@ -1,25 +1,37 @@
 header {
     background-color: #5E1675;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+main {
+    color: #5E1675;
 }
 
 #logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: -20px;
+    order: 1;
+    margin-right: 10px;
+    flex-shrink: 0;
 }
 
 h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    order: 2;
+    margin: 0;
+    flex-grow: 1;
+    color: white;
+}
+
+nav {
+    order: 3;
+    margin-left: auto;
 }
 
 #navigation {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: -30px;
     list-style-type: none;
 }
 
@@ -27,6 +39,61 @@ h1 {
     margin-right: 20px;
     text-decoration: none;
     color: white;
+    cursor: pointer;
+}
+
+.navBar:hover {
+    color: rgb(212, 212, 212);
+}
+
+.navBar:active {
+    background-color: rgb(185, 185, 185)
+}
+
+h3 {
+    display: inline-block;
+    margin: 3px;
+    margin-bottom: 50px;
+}
+
+#name {
+    color: #5E1675
+}
+
+#about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.arrow {
+    border: none;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+.arrow:active {
+    background-color: rgb(185, 185, 185);
+}
+
+#go-right:active {
+    transform: translateX(3px);
+    -webkit-transform: translateX(3px);
+    -moz-transform: translateX(3px);
+    -ms-transform: translateX(3px);
+    -o-transform: translateX(3px);
+}
+
+#go-left:active {
+    transform: translateX(-2px);
+    -webkit-transform: translateX(-2px);
+    -moz-transform: translateX(-2px);
+    -ms-transform: translateX(-2px);
+    -o-transform: translateX(-2px);
 }
 
 .mainImage {
@@ -34,18 +101,28 @@ h1 {
 }
 
 hr {
-    color: #5E1675;
+    background-color: #5E1675;
+    border: none;
+    height: 3px;
 }
 
-#company-branch {
+#company-branch1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+#company-branch2 {
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 100px;
 }
 
 .companyLocation {
     width: 100px;
     height: 100px;
-    border: black solid 2px;
+    border: #5E1675 solid 2px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -58,4 +135,13 @@ hr {
 .location {
     display: flex;
     justify-content: space-around;
+}
+
+#message-us {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+form {
+    margin-top: 10px;
 }
