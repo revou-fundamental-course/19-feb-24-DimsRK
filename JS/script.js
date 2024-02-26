@@ -16,7 +16,7 @@ function nextImage() {
 } */
 
 var currentImageIndex = 0;
-var images = ["Assets/Gedung\ Sate.jpg", "Assets/Piramida\ Summarecon.jpg", "Assets/Patung\ Suroboyo.jpg"];
+var images = ["Assets/image 1.png", "Assets/image 2.png", "Assets/image 3.png", "Assets/image 4.png"];
 
 function updateImage() {
     document.getElementById("main-img").src = images[currentImageIndex];

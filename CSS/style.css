@@ -2,10 +2,24 @@ header {
     background-color: #5E1675;
 }
 
+#logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: -20px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #navigation {
     display: flex;
     justify-content: flex-end;
-    margin-top: -10px;
+    align-items: center;
+    margin-top: -30px;
     list-style-type: none;
 }
 
