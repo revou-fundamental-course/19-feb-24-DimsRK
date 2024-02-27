@@ -20,73 +20,86 @@
         </nav>
     </header>
     <main>
-        <h2 id="greeting">Hi!</h2>
-        <h3 id="welcome">Selamat datang di website resmi</h3><h3 id="name">ETERNAL GUARD</h3>
-        <div id="about-us">
-            <button onclick="prevImage()" id="go-left" class="arrow"><img src="Assets/arrow left.png" alt="Left Arrow" width="50px" height="50px"></button>
-            <img src="Assets/image 1.png" width="500px" height="300px" alt="Company Info" id="main-img">
-            <button onclick="nextImage()" id="go-right" class="arrow"><img src="Assets/arrow right.png" alt="Right Arrow" width="50px" height="50px"></button>     
-        </div>
-        <hr>
-        <div id="company-location">
-            <h4>Eternal Guard dapat melayani anda dengan online melalui aplikasi ataupun offline dengan cara mendatangi kantor cabang kami yang telah tersebar di 7 Kota Besar di Indonesia</h4>
-            <div id="company-branch1">
-                <div>
-                    <div class="companyLocation" style="background-image: url(Assets/Monas.jpg);"></div>
-                    <h4 class="location">Jakarta</h4>
-                </div>
-                <div>
-                    <div class="companyLocation" style="background-image: url(Assets/Gedung\ Sate.jpg);"></div>
-                    <h4 class="location">Bandung</h4>
-                </div>
-                <div>
-                    <div class="companyLocation" style="background-image: url(Assets/Tugu\ Jogja.jpg);"></div>
-                    <h4 class="location">Yogyakarta</h4>
-                </div>
-                <div>
-                    <div class="companyLocation" style="background-image: url(Assets/Patung\ Suroboyo.jpg);"></div>
-                    <h4 class="location">Surabaya</h4>
+        <div id="main-content">
+            <div id="user-input">
+            <h2 id="greeting">Hi!</h2><h2 id="input">User</h2>
+            </div>
+            <h3 id="welcome">Selamat datang di website resmi</h3><h3 id="name">ETERNAL GUARD</h3>
+            <div id="about-us">
+                <button onclick="prevImage()" id="go-left" class="arrow"><img src="Assets/arrow left.png" alt="Left Arrow" width="50px" height="50px"></button>
+                <img src="Assets/image 1.png" width="500px" height="300px" alt="Company Info" id="main-img">
+                <button onclick="nextImage()" id="go-right" class="arrow"><img src="Assets/arrow right.png" alt="Right Arrow" width="50px" height="50px"></button>     
+            </div>
+            <hr>
+            <div id="company-location">
+                <h4>Eternal Guard dapat melayani anda dengan online melalui aplikasi ataupun offline dengan cara mendatangi kantor cabang kami yang telah tersebar di 7 Kota Besar di Indonesia</h4>
+                <div id="company-branch1">
+                    <div>
+                        <div class="companyLocation" style="background-image: url(Assets/Monas.jpg);"></div>
+                        <h4 class="location">Jakarta</h4>
+                    </div>
+                    <div>
+                        <div class="companyLocation" style="background-image: url(Assets/Gedung\ Sate.jpg);"></div>
+                        <h4 class="location">Bandung</h4>
+                    </div>
+                    <div>
+                        <div class="companyLocation" style="background-image: url(Assets/Tugu\ Jogja.jpg);"></div>
+                        <h4 class="location">Yogyakarta</h4>
+                    </div>
+                    <div>
+                        <div class="companyLocation" style="background-image: url(Assets/Patung\ Suroboyo.jpg);"></div>
+                        <h4 class="location">Surabaya</h4>
+                    </div>  
                 </div>  
-            </div>  
-            <div id="company-branch2">
-                <div>
-                    <div class="companyLocation" style="background-image: url(Assets/Pura\ Ulun\ Danu\ Bratan.jpg);"></div>
-                    <h4 class="location">Bali</h4>
-                </div>
-                <div>
-                    <div class="companyLocation" style="background-image: url(Assets/Jembatan\ Ampera.jpg);"></div>
-                    <h4 class="location">Palembang</h4>
-                </div>
-                <div>
-                    <div class="companyLocation" style="background-image: url(Assets/Tugu\ Khatulistiwa.jpg);"></div>
-                    <h4 class="location">Pontianak</h4>
+                <div id="company-branch2">
+                    <div>
+                        <div class="companyLocation" style="background-image: url(Assets/Pura\ Ulun\ Danu\ Bratan.jpg);"></div>
+                        <h4 class="location">Bali</h4>
+                    </div>
+                    <div>
+                        <div class="companyLocation" style="background-image: url(Assets/Jembatan\ Ampera.jpg);"></div>
+                        <h4 class="location">Palembang</h4>
+                    </div>
+                    <div>
+                        <div class="companyLocation" style="background-image: url(Assets/Tugu\ Khatulistiwa.jpg);"></div>
+                        <h4 class="location">Pontianak</h4>
+                    </div>
                 </div>
             </div>
-        </div>
         <hr>
+        </div>
         <div id="message-us">
-            <form>
+            <form id="user-form">
                 <label for="username"><p>Nama :</p></label>
-                <input type="text" id="username">
+                <input type="text" id="username" required>
                 <label for="age"><p>Umur :</p></label>
-                <input type="number" id="age">
+                <input type="number" id="age" required>
                 <label for="email"><p>E-mail :</p></label>
-                <input type="email" id="email">
+                <input type="email" id="email" required>
                 <div id="gender">
                     <p>Jenis Kelamin :</p>
-                    <input type="radio" name="gender" id="male">
+                    <input type="radio" name="gender" id="male" value="Laki-laki" required>
                     <label for="male">Laki-laki</label>
-                    <input type="radio" name="gender" id="female">
+                    <input type="radio" name="gender" id="female" value="Perempuan" required>
                     <label for="female">Perempuan</label>
-                </div>              
+                </div>
+                <label for="user-message"><p>Pesan Untuk Kami :</p></label>
+                <input type="text" id="user-message" required> 
+                <div id="button-section">
+                    <button id="submit">submit</button>    
+                    <button type="button" id="reset-button">Reset</button>  
+                </div>       
             </form>
+            <fieldset id="user-answer" style="display: none;">
+                <legend>Your Message</legend>
+                <div id="user-info" style="display: none;"></div>
+            </fieldset>
         </div>
-        <button id="submit">submit</button>
     </main>
     <footer>
         <div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5E1675" fill-opacity="1" d="M0,128L48,117.3C96,107,192,85,288,85.3C384,85,480,107,576,128C672,149,768,171,864,176C960,181,1056,171,1152,160C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-        </div>
+          t  
+        </div>   
     </footer>
     <script src="JS/script.js"></script>
 </body>
