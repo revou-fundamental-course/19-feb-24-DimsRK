@@ -69,6 +69,7 @@ const resetButton = document.getElementById("reset-button")
 
 form.addEventListener("submit", function(event) {
     event.preventDefault(); 
+    let date = Date(Date.now());
     const username = document.getElementById("username").value;
     const age = document.getElementById("age").value;
     const email = document.getElementById("email").value;
@@ -77,6 +78,7 @@ form.addEventListener("submit", function(event) {
     
     if (username && age && email && gender) {
         userInfoDiv.innerHTML = `
+            <p>${date}</p>
             <p>Nama: ${username}</p>
             <p>Umur: ${age}</p>
             <p>Email: ${email}</p>

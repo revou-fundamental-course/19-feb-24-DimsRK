@@ -4,7 +4,7 @@ html {
 
 #main-content {
     background-image: url(../Assets/eternal\ guard\ logo\ transparent.png);
-    background-color: rgba(231, 231, 231, 0.5);
+    background-color: white;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -297,4 +297,140 @@ footer>p>a:active {
 
 footer>p>a>img {
     padding-top: 5px;
+}
+
+/*smartphone responsive*/
+@media only screen and (max-width: 600px) {
+    #main-content {
+        background-size: 700px; 
+    }
+
+    #title>img {
+        width: 400px;
+    }
+
+    header {
+        flex-direction: column; 
+    }
+
+    #logo {
+        margin-right: 0; 
+    }
+
+    nav {
+        margin-top: 20px; 
+        order: 2; 
+    }
+
+    #navigation {
+        justify-content: center; 
+    }
+
+    .navBar {
+        margin: 0 10px; 
+    }
+
+    #user-prompt {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    #input {
+        margin-top: 5px; 
+    }
+
+    h3 {
+        margin-bottom: 30px; 
+    }
+
+    #about-us {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    #main-img {
+        width: 300px; /* Menyesuaikan lebar gambar sesuai kebutuhan */
+        height: auto; /* Menjaga aspek rasio gambar */
+        margin-right: 0; /* Menghapus margin kanan agar gambar tidak offside ke kanan */
+    }
+
+    #company-branch1, #company-branch2 {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .companyLocation {
+        width: 80px; 
+        height: 80px;
+    }
+
+    footer {
+        padding-bottom: 20px; 
+    }
+}
+
+/*tablet responsive*/
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    header {
+        padding: 20px 0; 
+    }
+
+    #navigation {
+        justify-content: flex-end; 
+    }
+
+    .navBar {
+        margin: 0 15px; 
+    }
+
+    #user-prompt {
+        flex-direction: row; 
+        align-items: center;
+    }
+
+    #input {
+        margin-left: 10px; 
+
+    h3 {
+        margin-bottom: 40px; 
+    }
+
+    #about-us {
+        margin-bottom: 150px; 
+    }
+
+    #company-branch1, #company-branch2 {
+        margin-top: 50px; 
+    }
+
+    .companyLocation {
+        width: 120px; 
+        height: 120px;
+    }
+    }
+}
+
+/*desktop responsive*/
+@media only screen and (min-width: 1025px) { 
+    header {
+        padding: 30px 0; 
+    }
+
+    .navBar {
+        margin: 0 25px;
+    }
+
+    h3 {
+        margin-bottom: 60px; 
+    }
+
+    #company-branch1, #company-branch2 {
+        margin-top: 100px; 
+        margin-bottom: 200px;
+    }
+
+    .companyLocation {
+        width: 150px; 
+        height: 150px;
+    }
 }
