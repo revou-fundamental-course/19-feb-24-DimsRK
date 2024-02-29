@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: perpetua;
+}
+
 #main-content {
     background-image: url(../Assets/eternal\ guard\ logo\ transparent.png);
     background-color: white;
