@@ -8,7 +8,7 @@
     <title>Eternal Guard</title>
 </head>
 <body>
-    <header>
+    <header id="home">
         <div id="logo"><img src="Assets/Eternal Guard Name, Quote, Logo WHITE.png" width="150px" alt="Company Logo"></div>
         <h1>ETERNAL GUARD</h1>
         <nav>
@@ -21,7 +21,7 @@
     </header>
     <main>
         <div id="main-content">
-            <div id="user-input">
+            <div id="user-prompt">
             <h2 id="greeting">Hi!</h2><h2 id="input">User</h2>
             </div>
             <h3 id="welcome">Selamat datang di website resmi</h3><h3 id="name">ETERNAL GUARD</h3>
@@ -70,21 +70,25 @@
         </div>
         <div id="message-us">
             <form id="user-form">
-                <label for="username"><p>Nama :</p></label>
-                <input type="text" id="username" required>
-                <label for="age"><p>Umur :</p></label>
-                <input type="number" id="age" required>
-                <label for="email"><p>E-mail :</p></label>
-                <input type="email" id="email" required>
-                <div id="gender">
-                    <p>Jenis Kelamin :</p>
-                    <input type="radio" name="gender" id="male" value="Laki-laki" required>
-                    <label for="male">Laki-laki</label>
-                    <input type="radio" name="gender" id="female" value="Perempuan" required>
-                    <label for="female">Perempuan</label>
+                <div class="form">
+                    <label for="username"><p><strong>Nama :</strong></p></label>
+                    <input type="text" id="username" required>
+                    <label for="age"><p><strong>Umur :</strong></p></label>
+                    <input type="number" id="age" required>
+                    <label for="email"><p><strong>E-mail :</strong></p></label>
+                    <input type="email" id="email" required>
                 </div>
-                <label for="user-message"><p>Pesan Untuk Kami :</p></label>
-                <input type="text" id="user-message" required> 
+                <div id="gender">
+                    <p><strong>Jenis Kelamin :</strong></p>
+                    <input type="radio" name="gender" id="male" value="Laki-laki" required>
+                    <label for="male"><strong>Laki-laki</strong></label>
+                    <input type="radio" name="gender" id="female" value="Perempuan" required>
+                    <label for="female"><strong>Perempuan</strong></label>
+                </div>
+                <div class="form">
+                    <label for="user-message"><p><strong>Pesan Untuk Kami :</strong></p></label>
+                    <input type="text" id="user-message" required> 
+                </div>
                 <div id="button-section">
                     <button id="submit">submit</button>    
                     <button type="button" id="reset-button">Reset</button>  
@@ -95,11 +99,12 @@
                 <div id="user-info" style="display: none;"></div>
             </fieldset>
         </div>
+        <nav id="back-to-top">
+            <a href="#home" id="up"><img src="Assets/arrow up.png" alt="Back to Top" width="100px"></a>
+        </nav>
     </main>
     <footer>
-        <div>
-          t  
-        </div>   
+        <p>© ETERNAL GUARD Life Protection | <a href="https://github.com/DimsRK" target="_blank"><img src="Assets/github_logo_icon_145252.png" width="13px" alt="github logo"> Made By: Dimas Restu Kumbayohni</a> . All rights reserved.</p>  
     </footer>
     <script src="JS/script.js"></script>
 </body>
