@@ -63,7 +63,7 @@ nav {
     background-color: rgb(185, 185, 185)
 }
 
-#user-input {
+#user-prompt {
     display: flex;
 }
 
@@ -265,7 +265,36 @@ legend {
     -o-transform: translateY(3px);
 }
 
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
 footer {
     background-color: #5E1675;
     margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+footer>p>a {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 400;
+    color: white;
+}
+
+footer>p>a:hover {
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+footer>p>a:active {
+    color: grey;
+}
+
+footer>p>a>img {
+    padding-top: 5px;
 }
