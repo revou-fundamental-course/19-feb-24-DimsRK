@@ -79,11 +79,11 @@ form.addEventListener("submit", function(event) {
     if (username && age && email && gender) {
         userInfoDiv.innerHTML = `
             <p>${date}</p>
-            <p>Nama: ${username}</p>
-            <p>Umur: ${age}</p>
-            <p>Email: ${email}</p>
-            <p>Jenis Kelamin: ${gender.value}</p>
-            <p>Pesan Untuk Kami :</p>
+            <p><strong>Nama: </strong>${username}</p>
+            <p><strong>Umur:</strong> ${age}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Jenis Kelamin:</strong> ${gender.value}</p>
+            <p><strong>Pesan Untuk Kami :</strong></p>
             <p>${message}</p>
         `;
         userInfoDiv.style.display = "block";
