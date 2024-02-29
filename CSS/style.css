@@ -178,6 +178,31 @@ hr {
 
 form {
     margin-top: 10px;
+    cursor: pointer;
+}
+
+.form {
+    border: #5E1675 solid 1px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 3px;
+}
+
+.form:hover {
+    border: #4f1164 solid 2px;
+}
+
+.form:focus {
+    border: #3f0d50 solid 3px;
+    border-radius: 5px;
+    outline: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 legend {
